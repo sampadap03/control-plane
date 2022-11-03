@@ -94,6 +94,10 @@ void stringops::print(char *ptr)
     }
 }
 
+bool operator+(stringops& news){
+ 
+}
+
 int stringops_main()
 {
     stringops strr;
@@ -104,6 +108,8 @@ int stringops_main()
     cin.getline(s2, 40);
     char *ptr1 = s1;
     char *ptr2 = s2;
+    strr->string1 = s1;
+    strr->string2 = s2;
     int choice = 0;
     while (choice != 4)
     {
