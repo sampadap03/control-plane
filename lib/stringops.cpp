@@ -4,15 +4,18 @@
 
 using namespace std;
 
-stringops::stringops(){
+stringops::stringops()
+{
     cout << "normal construct ya" << endl;
 }
 
-stringops::~stringops(){
+stringops::~stringops()
+{
     cout << "adios stringops" << endl;
 }
 
-stringops::stringops(const char str[]){
+stringops::stringops(const char str[])
+{
     strcpy(this->ogstring, str);
     cout << this->ogstring << endl;
 }
@@ -94,10 +97,6 @@ void stringops::print(char *ptr)
     }
 }
 
-bool operator+(stringops& news){
- 
-}
-
 int stringops_main()
 {
     stringops strr;
@@ -108,8 +107,6 @@ int stringops_main()
     cin.getline(s2, 40);
     char *ptr1 = s1;
     char *ptr2 = s2;
-    strr->string1 = s1;
-    strr->string2 = s2;
     int choice = 0;
     while (choice != 4)
     {
